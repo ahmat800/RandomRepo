@@ -1,0 +1,1940 @@
+fileFormatVersion: 2
+guid: f18a5c300cbe8bd4f969d47c1a4552f2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2249
+        width: 251
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92830359aa9fae840bff6f87f8340184
+      internalID: 54439720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 2366
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a209c2315fa0840a2485ea7789d9bc
+      internalID: 1589660280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_2
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1961
+        width: 456
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc821d44e2ced5e41913b1dc1440dac1
+      internalID: 650994445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_3
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2366
+        width: 60
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ef7c508bff9a441a63b2965f095afc
+      internalID: -1069967720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_4
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 2249
+        width: 244
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6750e1e1b2c16498e8112d1d316282
+      internalID: -1530748825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_5
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 2366
+        width: 60
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e067b4407134c2848ba2063168880f23
+      internalID: 374992663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_6
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 2249
+        width: 243
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc92d51c43005934c814d474121684d8
+      internalID: 523935674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_7
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 2366
+        width: 60
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6941b6f52aedd6e489a2e5ddf2e4b3da
+      internalID: 293306539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_8
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 2398
+        width: 88
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dec1292e610fba4da37f12a6ded35bf
+      internalID: -959760048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1918
+        width: 582
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee7ef780465d83479da5d781110f171
+      internalID: 1728321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_10
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2346
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a39594ccae1f7488b92dca6902d640
+      internalID: -355621156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_11
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 2248
+        width: 109
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b538962f74d124a8b5774520a99b55
+      internalID: -1135340364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_12
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2346
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf5c02bb070d0a4bb1a55b97ff24753
+      internalID: -1961015051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_13
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 2248
+        width: 108
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105f8ef4f0f29a249955c88c0d0fccde
+      internalID: -164454537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_14
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 2346
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8df402afa5e34f4ba51547660cec066
+      internalID: -316436100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_15
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 1918
+        width: 275
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fc395adf7089e42ab5f5bddf8a888b
+      internalID: 669462290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_16
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2346
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909134e194b9bc24ab6a8c2b82b61a4c
+      internalID: 1855148694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_17
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1950
+        width: 388
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0741b956e2643446ba8081daaa899ad
+      internalID: -634813410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_18
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 2163
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c7f3b1ef797414cb6b66751f913682
+      internalID: -1150057527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_19
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1918
+        width: 378
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62261358e6a16bf4da9aaf21206f5d30
+      internalID: -748945205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_20
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 2163
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c0912268c866849815fd4ad84062c2
+      internalID: -1576658904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_21
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 1918
+        width: 241
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19b7d0a7639cc44ebfa7fecd316dde4
+      internalID: -2043562358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_22
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1968
+        width: 108
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e75977fd57660479b5ebf0fbc3b994
+      internalID: -2036962894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_23
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 2066
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698b5dcf0e14a1242b288d8582321685
+      internalID: 135582188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_24
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2086
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf5e83929ce68a48963a1c07435d37a
+      internalID: 1801467400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_25
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 1970
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e3ee1d51c45604e93411ee4056a921
+      internalID: -1526132230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1318
+        width: 581
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610914b4c73fba949a1cc7632e2e4f0f
+      internalID: 1954857813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_27
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1465
+        width: 448
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61064043232247d459914615c3ffd5bb
+      internalID: -24993751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_28
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1765
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d56aeeb399642f4a85a30a097c10c6e
+      internalID: 1706758320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_29
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1497
+        width: 310
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785809bcd8753e34a8a691094abc80f5
+      internalID: -178209824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_30
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1503
+        width: 327
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3509859823dc5b542884d211a479e17e
+      internalID: 1442735661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_31
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1318
+        width: 572
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a9327aacbf89e4aa896ea19e444854
+      internalID: 1719317422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_32
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 1798
+        width: 87
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197a4d915003ec045a466e196e2e2489
+      internalID: -901253153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_33
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1745
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44858ec90d9397f4784a6901be5b1a8a
+      internalID: 1558955228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_34
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1562
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936b290936d39d140b06ec2e54c76346
+      internalID: -628064861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_35
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1046
+        width: 516
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4593260b4bb9ee54d810a66de81f7bdd
+      internalID: 17859479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_36
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1046
+        width: 326
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fab18e9a1d100447ac0f4bf27718dfa
+      internalID: -1478930369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_37
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1046
+        width: 374
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7797eaa9d82e94449f5ed45a467e984
+      internalID: 548577713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_38
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1368
+        width: 107
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78343023ef2df847bb319544aef06c2
+      internalID: 777727867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_39
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1047
+        width: 507
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2003e53a0507d41b3f0f4c31de8173
+      internalID: -1238190780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_40
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1033
+        width: 246
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93da5e3205842ec4d9fd6fc098b4e078
+      internalID: -1417451211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_41
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 1368
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295ad68208aa3704cb9e6d0621383ea5
+      internalID: -424678188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1046
+        width: 251
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25808d8688846944a9ff903ecf92b9b
+      internalID: 2029193231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_43
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 1196
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93fa19b4a56ffe4086a2b3682636c24
+      internalID: 858155098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_44
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1046
+        width: 109
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fb444c4cc9b284e876c6b5de5d0af7
+      internalID: -1317043095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_45
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 637
+        width: 401
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a06ef01f82ff6a4aba18444096f9dba
+      internalID: -283113195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_46
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 648
+        width: 315
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6168411860d02384e825e8f5136e447f
+      internalID: -1178554353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_47
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 960
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbf575fae41c8d4ca389f613a003f6d
+      internalID: 1601041736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_48
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 443
+        width: 530
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cb61daca922fa4582e3a93e2d8f12b
+      internalID: 417657774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_49
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 960
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8aae08a76cd8049952cba1a8e60ece
+      internalID: -1789602959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_50
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 444
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d717698a6ca4e46a0ba3d541fd48ed
+      internalID: -176977739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_51
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 637
+        width: 323
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bf2d5ba8f30144eb45b88cc5b3df3d
+      internalID: -1286799075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_52
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 960
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742e8d615bf9abe4ebe3bd79b9f6dedb
+      internalID: 1299538131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 766
+        width: 177
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1cc5a42b1b69c47af3dd73f5e1c572
+      internalID: 420981735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_54
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 864
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d1610d61923804fad1f60bda111caa
+      internalID: 1043373979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_55
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 767
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33e4380e817861489b1c39a1af2175e
+      internalID: -1667697108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 252
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee254ccd336113d4b9f62b16417e3937
+      internalID: -886912090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_57
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 563
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238c6c543e6577b4690210e2daf1e7e9
+      internalID: 1214907210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_58
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 165
+        width: 449
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e05828155c4f2546be78d46e56fa40b
+      internalID: -176083384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_59
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 563
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b49a7ac4dbcd3b49838cdcef582824a
+      internalID: -163664538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_60
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 597
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ed1214ac889ce45bfbd21b522a1d7a
+      internalID: 1446755363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_61
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 117
+        width: 413
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b3760dcad498a4c8b031bc268cede7
+      internalID: 1228171809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_62
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 543
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7931efa10eae6438577428f834c9ac
+      internalID: 1324526225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_63
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 117
+        width: 318
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d68472e88e464242a96dc6eee6d97b5
+      internalID: 6724898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_64
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 543
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f49e1c0b07fdd468f0e7bdb7c33f8b
+      internalID: -1107027480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_65
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 162
+        width: 299
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791fc775a4f3ad94687332a4be23bc47
+      internalID: 1079190404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_66
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 360
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d79002953cb7841a1391c743fe3019
+      internalID: 218789524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_67
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 117
+        width: 375
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f1e15b6aec99f4bb10dbd42771a6cd
+      internalID: 511886570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 177
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9dcce5f6ead0e4dadf043610b8e790
+      internalID: -670155740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_69
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 117
+        width: 245
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f48438afb4290e49824fab518c3b6b2
+      internalID: -1783077986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_70
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 165
+        width: 108
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6fdc16e71bbda47a73af07ddd3ab88
+      internalID: 854652566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_71
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 263
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5c1c57e142e62418f74c82ec76603d
+      internalID: -190168918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_72
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 283
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bae4b2fa5b5c224888506ed36ad27b3
+      internalID: -700089422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_73
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 167
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9031ff315fa0745bda413315503c83
+      internalID: -1065364656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1af4c9a53972b4582ceccee07fd67e
+      internalID: -152967070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_75
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1e07a49916142479ed45bac3f2bc9f
+      internalID: -1151760310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_76
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 0
+        width: 93
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2116802745f4924497d5b46f4391abd
+      internalID: 688031715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_77
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452561284d3676445bb84142ceb8f17c
+      internalID: -104811571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_78
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 0
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ecd7715740dea4781f312e78e7acda
+      internalID: -1696913839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_79
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 0
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4f88444ca42164497d7e325f352803
+      internalID: -1550036427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_80
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 0
+        width: 92
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee1cab448664824684acb7e1d496bb6
+      internalID: 1650298071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_81
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7001288a698ce5b42b14dd5e18e96dbb
+      internalID: 694512926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-fruit-collection-free-illustration-png-image_14596224_82
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 0
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01cbb0a78e01ec49b16089da02807ad
+      internalID: -528332782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pngtree-fruit-collection-free-illustration-png-image_14596224_0: 54439720
+      pngtree-fruit-collection-free-illustration-png-image_14596224_1: 1589660280
+      pngtree-fruit-collection-free-illustration-png-image_14596224_10: -355621156
+      pngtree-fruit-collection-free-illustration-png-image_14596224_11: -1135340364
+      pngtree-fruit-collection-free-illustration-png-image_14596224_12: -1961015051
+      pngtree-fruit-collection-free-illustration-png-image_14596224_13: -164454537
+      pngtree-fruit-collection-free-illustration-png-image_14596224_14: -316436100
+      pngtree-fruit-collection-free-illustration-png-image_14596224_15: 669462290
+      pngtree-fruit-collection-free-illustration-png-image_14596224_16: 1855148694
+      pngtree-fruit-collection-free-illustration-png-image_14596224_17: -634813410
+      pngtree-fruit-collection-free-illustration-png-image_14596224_18: -1150057527
+      pngtree-fruit-collection-free-illustration-png-image_14596224_19: -748945205
+      pngtree-fruit-collection-free-illustration-png-image_14596224_2: 650994445
+      pngtree-fruit-collection-free-illustration-png-image_14596224_20: -1576658904
+      pngtree-fruit-collection-free-illustration-png-image_14596224_21: -2043562358
+      pngtree-fruit-collection-free-illustration-png-image_14596224_22: -2036962894
+      pngtree-fruit-collection-free-illustration-png-image_14596224_23: 135582188
+      pngtree-fruit-collection-free-illustration-png-image_14596224_24: 1801467400
+      pngtree-fruit-collection-free-illustration-png-image_14596224_25: -1526132230
+      pngtree-fruit-collection-free-illustration-png-image_14596224_26: 1954857813
+      pngtree-fruit-collection-free-illustration-png-image_14596224_27: -24993751
+      pngtree-fruit-collection-free-illustration-png-image_14596224_28: 1706758320
+      pngtree-fruit-collection-free-illustration-png-image_14596224_29: -178209824
+      pngtree-fruit-collection-free-illustration-png-image_14596224_3: -1069967720
+      pngtree-fruit-collection-free-illustration-png-image_14596224_30: 1442735661
+      pngtree-fruit-collection-free-illustration-png-image_14596224_31: 1719317422
+      pngtree-fruit-collection-free-illustration-png-image_14596224_32: -901253153
+      pngtree-fruit-collection-free-illustration-png-image_14596224_33: 1558955228
+      pngtree-fruit-collection-free-illustration-png-image_14596224_34: -628064861
+      pngtree-fruit-collection-free-illustration-png-image_14596224_35: 17859479
+      pngtree-fruit-collection-free-illustration-png-image_14596224_36: -1478930369
+      pngtree-fruit-collection-free-illustration-png-image_14596224_37: 548577713
+      pngtree-fruit-collection-free-illustration-png-image_14596224_38: 777727867
+      pngtree-fruit-collection-free-illustration-png-image_14596224_39: -1238190780
+      pngtree-fruit-collection-free-illustration-png-image_14596224_4: -1530748825
+      pngtree-fruit-collection-free-illustration-png-image_14596224_40: -1417451211
+      pngtree-fruit-collection-free-illustration-png-image_14596224_41: -424678188
+      pngtree-fruit-collection-free-illustration-png-image_14596224_42: 2029193231
+      pngtree-fruit-collection-free-illustration-png-image_14596224_43: 858155098
+      pngtree-fruit-collection-free-illustration-png-image_14596224_44: -1317043095
+      pngtree-fruit-collection-free-illustration-png-image_14596224_45: -283113195
+      pngtree-fruit-collection-free-illustration-png-image_14596224_46: -1178554353
+      pngtree-fruit-collection-free-illustration-png-image_14596224_47: 1601041736
+      pngtree-fruit-collection-free-illustration-png-image_14596224_48: 417657774
+      pngtree-fruit-collection-free-illustration-png-image_14596224_49: -1789602959
+      pngtree-fruit-collection-free-illustration-png-image_14596224_5: 374992663
+      pngtree-fruit-collection-free-illustration-png-image_14596224_50: -176977739
+      pngtree-fruit-collection-free-illustration-png-image_14596224_51: -1286799075
+      pngtree-fruit-collection-free-illustration-png-image_14596224_52: 1299538131
+      pngtree-fruit-collection-free-illustration-png-image_14596224_53: 420981735
+      pngtree-fruit-collection-free-illustration-png-image_14596224_54: 1043373979
+      pngtree-fruit-collection-free-illustration-png-image_14596224_55: -1667697108
+      pngtree-fruit-collection-free-illustration-png-image_14596224_56: -886912090
+      pngtree-fruit-collection-free-illustration-png-image_14596224_57: 1214907210
+      pngtree-fruit-collection-free-illustration-png-image_14596224_58: -176083384
+      pngtree-fruit-collection-free-illustration-png-image_14596224_59: -163664538
+      pngtree-fruit-collection-free-illustration-png-image_14596224_6: 523935674
+      pngtree-fruit-collection-free-illustration-png-image_14596224_60: 1446755363
+      pngtree-fruit-collection-free-illustration-png-image_14596224_61: 1228171809
+      pngtree-fruit-collection-free-illustration-png-image_14596224_62: 1324526225
+      pngtree-fruit-collection-free-illustration-png-image_14596224_63: 6724898
+      pngtree-fruit-collection-free-illustration-png-image_14596224_64: -1107027480
+      pngtree-fruit-collection-free-illustration-png-image_14596224_65: 1079190404
+      pngtree-fruit-collection-free-illustration-png-image_14596224_66: 218789524
+      pngtree-fruit-collection-free-illustration-png-image_14596224_67: 511886570
+      pngtree-fruit-collection-free-illustration-png-image_14596224_68: -670155740
+      pngtree-fruit-collection-free-illustration-png-image_14596224_69: -1783077986
+      pngtree-fruit-collection-free-illustration-png-image_14596224_7: 293306539
+      pngtree-fruit-collection-free-illustration-png-image_14596224_70: 854652566
+      pngtree-fruit-collection-free-illustration-png-image_14596224_71: -190168918
+      pngtree-fruit-collection-free-illustration-png-image_14596224_72: -700089422
+      pngtree-fruit-collection-free-illustration-png-image_14596224_73: -1065364656
+      pngtree-fruit-collection-free-illustration-png-image_14596224_74: -152967070
+      pngtree-fruit-collection-free-illustration-png-image_14596224_75: -1151760310
+      pngtree-fruit-collection-free-illustration-png-image_14596224_76: 688031715
+      pngtree-fruit-collection-free-illustration-png-image_14596224_77: -104811571
+      pngtree-fruit-collection-free-illustration-png-image_14596224_78: -1696913839
+      pngtree-fruit-collection-free-illustration-png-image_14596224_79: -1550036427
+      pngtree-fruit-collection-free-illustration-png-image_14596224_8: -959760048
+      pngtree-fruit-collection-free-illustration-png-image_14596224_80: 1650298071
+      pngtree-fruit-collection-free-illustration-png-image_14596224_81: 694512926
+      pngtree-fruit-collection-free-illustration-png-image_14596224_82: -528332782
+      pngtree-fruit-collection-free-illustration-png-image_14596224_9: 1728321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
