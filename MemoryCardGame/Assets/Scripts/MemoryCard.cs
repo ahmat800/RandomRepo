@@ -54,7 +54,8 @@ public class MemoryCard : MonoBehaviour
         {
             timer += Time.deltaTime;
             float scale = Mathf.Lerp(1, 0, (timer / cardFlipDuration));
-            cardBackgroundImage.rectTransform.localScale = new Vector3(scale, 0, 0);
+            Debug.LogError($"Scale {scale}");
+            cardBackgroundImage.rectTransform.localScale = new Vector3(scale, 1, 1);
             yield return null;
         }
 
@@ -69,11 +70,12 @@ public class MemoryCard : MonoBehaviour
             cardBackgroundImage.sprite = flippedCardSprite;
         }
 
+        timer = 0;
         while (timer / cardFlipDuration < 1)
         {
             timer += Time.deltaTime;
             float scale = Mathf.Lerp(0, 1, (timer / cardFlipDuration));
-            cardBackgroundImage.rectTransform.localScale = new Vector3(scale, 0, 0);
+            cardBackgroundImage.rectTransform.localScale = new Vector3(scale, 1 ,1);
             yield return null;
         }
 
