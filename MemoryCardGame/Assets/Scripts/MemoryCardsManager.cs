@@ -15,7 +15,9 @@ public class MemoryCardsManager : MonoBehaviour
     public GridLayoutGroup gridLayout;
     public List<Sprite> cardSprites;
 
-    public int maxTryCount = 5;
+    public int maxWrnogMovementAmount = 5;
+    public int wrongMoveAmount;
+    public int pendingMoves = 0;
     private MemoryCard card1;
     private MemoryCard card2;
 
@@ -23,6 +25,7 @@ public class MemoryCardsManager : MonoBehaviour
 
     private void Start()
     {
+        wrongMoveAmount = maxWrnogMovementAmount;
         InitCards();
     }
 
@@ -117,8 +120,14 @@ public class MemoryCardsManager : MonoBehaviour
 
     public void OnMemoryCardClicked(MemoryCard card) 
     {
+      
+
         if (card1 == null)
         {
+            if (wrongMoveAmount == 0) { return; }
+
+            wrongMoveAmount -= 1;
+
             card1 = card;
             card1.ShowCard(null);
             return;
@@ -126,7 +135,7 @@ public class MemoryCardsManager : MonoBehaviour
         else if (card2 == null) 
         {
             card2 = card;
-            maxTryCount -= 1;
+            pendingMoves += 1;
 
             int card1TempID = card1.GetId();
             int card2TempID = card2.GetId();
@@ -144,16 +153,25 @@ public class MemoryCardsManager : MonoBehaviour
 
     public void CheckForCardMachig(int card1Id, int card2Id) 
     {
-        
+
+        pendingMoves -= 1;
 
         if (memoryCardsDictionary[card1Id].GetCardSprite() == memoryCardsDictionary[card2Id].GetCardSprite())
         {
+            wrongMoveAmount += 1;
             Debug.LogError("Matching Cards");
         }
         else 
         {
             memoryCardsDictionary[card1Id].HideCard(null, 0.3f);
             memoryCardsDictionary[card2Id].HideCard(null, 0.3f);
+
+            // Update Movement Text
+        }
+
+        if (wrongMoveAmount == 0 && pendingMoves == 0)
+        {
+            //End Game
         }
     }
 

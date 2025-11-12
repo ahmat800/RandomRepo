@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f20e418c8b27414fbdb242ce62688b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalCardsCouple: 8
+  totalCardsCouple: 10
   cardsViewDuration: 4
   memoryCardPrefab: {fileID: 9097948122398714606, guid: d1cc3f2b30129ab4eac72db53a0b8c3a, type: 3}
   gridLayout: {fileID: 1709745150}
@@ -430,7 +430,9 @@ MonoBehaviour:
   - {fileID: 6724898, guid: f18a5c300cbe8bd4f969d47c1a4552f2, type: 3}
   - {fileID: 1079190404, guid: f18a5c300cbe8bd4f969d47c1a4552f2, type: 3}
   - {fileID: 511886570, guid: f18a5c300cbe8bd4f969d47c1a4552f2, type: 3}
-  maxTryCount: 5
+  maxWrnogMovementAmount: 2
+  wrongMoveAmount: 0
+  pendingMoves: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
