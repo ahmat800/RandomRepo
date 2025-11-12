@@ -150,7 +150,7 @@ public class MemoryCardsManager : MonoBehaviour
         }
 
     }
-
+    private int Score = 0;
     public void CheckForCardMachig(int card1Id, int card2Id) 
     {
 
@@ -159,14 +159,15 @@ public class MemoryCardsManager : MonoBehaviour
         if (memoryCardsDictionary[card1Id].GetCardSprite() == memoryCardsDictionary[card2Id].GetCardSprite())
         {
             wrongMoveAmount += 1;
-            Debug.LogError("Matching Cards");
+            Score += 5;
+            GameUiManager.instance.UpdateScoreText(Score);
         }
         else 
         {
             memoryCardsDictionary[card1Id].HideCard(null, 0.3f);
             memoryCardsDictionary[card2Id].HideCard(null, 0.3f);
 
-            // Update Movement Text
+            GameUiManager.instance.UpdateMovesText(wrongMoveAmount);
         }
 
         if (wrongMoveAmount == 0 && pendingMoves == 0)

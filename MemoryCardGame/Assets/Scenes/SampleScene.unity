@@ -430,7 +430,7 @@ MonoBehaviour:
   - {fileID: 6724898, guid: f18a5c300cbe8bd4f969d47c1a4552f2, type: 3}
   - {fileID: 1079190404, guid: f18a5c300cbe8bd4f969d47c1a4552f2, type: 3}
   - {fileID: 511886570, guid: f18a5c300cbe8bd4f969d47c1a4552f2, type: 3}
-  maxWrnogMovementAmount: 2
+  maxWrnogMovementAmount: 5
   wrongMoveAmount: 0
   pendingMoves: 0
 --- !u!1 &619394800
