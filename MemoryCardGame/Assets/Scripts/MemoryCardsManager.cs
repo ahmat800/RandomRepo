@@ -61,6 +61,7 @@ public class MemoryCardsManager : MonoBehaviour
             foreach (MemoryCard card in memoryCards)
             {
                 card.ForceHide();
+                card.transform.SetParent(null);
             }
 
             ShuffleCards(memoryCards);
