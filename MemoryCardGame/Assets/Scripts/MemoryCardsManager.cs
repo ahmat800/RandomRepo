@@ -36,11 +36,7 @@ public class MemoryCardsManager : MonoBehaviour
     public void PrepareGame() 
     {
         InitCards();
-
-        // Check For Saved Progress
-
-
-        GameUiManager.instance.UpdateMovesText(maxWrnogMovementAmount);
+        GameUiManager.instance.UpdateMovesText(wrongMoveAmount);
         GameUiManager.instance.UpdateScoreText(0);
     }
 
@@ -55,20 +51,21 @@ public class MemoryCardsManager : MonoBehaviour
             CreateCards();
 
 
-        foreach (MemoryCard card in memoryCards)
+        if (ProgressManager.IsThereSavedData())
         {
-            card.isMatched = false;
-            card.ForceHide();
+            LoadLevel();
+        }
+        else
+        {
+
+            foreach (MemoryCard card in memoryCards)
+            {
+                card.ForceHide();
+            }
+
+            ShuffleCards(memoryCards);
         }
 
-
-
-        foreach (MemoryCard card in memoryCards)
-        {
-            card.isMatched = false;
-        }
-
-        ShuffleCards(memoryCards);
 
 
         memoryCardsDictionary = new Dictionary<int, MemoryCard>();
@@ -77,11 +74,10 @@ public class MemoryCardsManager : MonoBehaviour
         {
             memoryCardsDictionary.Add(card.GetId(), card);
         }
-
-        for (int i = 0; i < memoryCardsDictionary.Count; i++)
+        foreach (MemoryCard card in memoryCards)
         {
-            memoryCardsDictionary[i].transform.SetParent(gridLayout.transform);
-            memoryCardsDictionary[i].transform.localScale = Vector3.one;
+            card.transform.SetParent(gridLayout.transform);
+            card.transform.localScale = Vector3.one;
         }
     }
     private void CreateCards()
@@ -104,7 +100,7 @@ public class MemoryCardsManager : MonoBehaviour
         }
     }
 
-    private void ShuffleCards(List<MemoryCard> cards)
+    private void ShuffleCards<T>(List<T> cards)
     {
         for (int i = 0; i < cards.Count; i++)
         {
@@ -185,10 +181,11 @@ public class MemoryCardsManager : MonoBehaviour
 
             AudioManager.instance.PlaySound("CardMatching");
 
-            if (areAllCardsMatched())
+            if (AreAllCardsMatched())
             {
                 GameUiManager.instance.ShowEndGamePanel(true);
                 AudioManager.instance.PlaySound("Win");
+                ProgressManager.ClearLevelData();
             }
         }
         else 
@@ -203,6 +200,7 @@ public class MemoryCardsManager : MonoBehaviour
         if (wrongMoveAmount == 0 && pendingMoves == 0)
         {
             GameUiManager.instance.ShowEndGamePanel(false);
+            ProgressManager.ClearLevelData();
         }
     }
 
@@ -212,7 +210,7 @@ public class MemoryCardsManager : MonoBehaviour
         card2 = null;
     }
 
-    private bool areAllCardsMatched() 
+    private bool AreAllCardsMatched() 
     {
         foreach (var card in memoryCardsDictionary.Values) 
         {
@@ -223,8 +221,60 @@ public class MemoryCardsManager : MonoBehaviour
         return true;
     }
 
+    public void LoadLevel() 
+    {
+        LevelData savedLevelData = ProgressManager.LoadLevel();
+
+        if (savedLevelData.cards.Count != totalCardsCouple * 2)
+        {
+            ProgressManager.ClearLevelData();
+            return;
+        }
+
+        wrongMoveAmount = savedLevelData.remainingMovesCount;
+        Score = savedLevelData.score;
+
+        for (int i = 0; i < savedLevelData.cards.Count; i++) 
+        {
+            memoryCards[i].InitCard(savedLevelData.cards[i].cardId, GetSpriteByName(savedLevelData.cards[i].cardSprite), this);
+            if (savedLevelData.cards[i].isVisible)
+                memoryCards[i].ForceShow();
+            else 
+                memoryCards[i].ForceHide();
+        }
+    }
+
+    public Sprite GetSpriteByName(string name) 
+    {
+        for (int i = 0; i < cardSprites.Count; i++) 
+        {
+            if (cardSprites[i].name == name)
+            {
+                return cardSprites[i];
+            }
+        }
+
+        return null;
+    }
+
     public void SaveProgress()
     {
-        
+        LevelData levelData = new LevelData();
+
+        levelData.remainingMovesCount = wrongMoveAmount;
+        levelData.score = Score;
+        levelData.cards = new List<CardData>();
+
+        for (int i = 0; i < memoryCards.Count; i++) 
+        {
+            levelData.cards.Add(new CardData
+            {
+                cardId = memoryCards[i].GetId(),
+                isVisible = memoryCards[i].isMatched,
+                cardSprite = memoryCards[i].GetCardSprite().name
+            });
+        }
+
+        ProgressManager.SaveLevel(levelData);
     }
 }

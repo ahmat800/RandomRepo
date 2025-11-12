@@ -14,18 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioUnits:
   - name: ShowPopup
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4702a73a16927144cbf0db4fad169326, type: 3}
   - name: HidePopup
-    clip: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 90409a82f3ea7664d847b523bf55c003, type: 3}
   - name: ButtonClick
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: de015623ba5229d4998ab0b5917f2d08, type: 3}
   - name: CardFlip
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: c5ae2eab2200f97499a7abf6c2bb3948, type: 3}
   - name: CardMatching
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 8eb932add363a8b4bbd9c182c38b4307, type: 3}
   - name: CardMatchingFail
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 9b3955cf3ffadfe49a2fda4e9ba3ff00, type: 3}
   - name: Win
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 6b05fff2db4c73b4ba42823d906fe0a9, type: 3}

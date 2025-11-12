@@ -23,6 +23,7 @@ public class MemoryCard : MonoBehaviour
     {
         Id = cardId;
         cardImage.sprite = cardSprite;
+        button.onClick.RemoveAllListeners();
         button.onClick.AddListener(() =>
         {
             cardsManager.OnMemoryCardClicked(this);
@@ -50,6 +51,15 @@ public class MemoryCard : MonoBehaviour
         cardImage.enabled = false;
         cardBackgroundImage.sprite = flippedCardSprite;
         button.interactable = true;
+        isMatched = false;
+    }
+
+    public void ForceShow()
+    {
+        cardImage.enabled = true;
+        cardBackgroundImage.sprite = cardbackgroundSprite;
+        button.interactable = false;
+        isMatched = true;
     }
 
     public void HideCard(UnityAction onComplete, float delay = 0) 

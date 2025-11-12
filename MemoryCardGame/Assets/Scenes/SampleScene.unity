@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundMusicSource: {fileID: 662503322}
   mainAudioSource: {fileID: 1928544723}
-  audioClipCollection: {fileID: 0}
+  audioClipCollection: {fileID: 11400000, guid: d72fe5e727187d144890f87076b182a3, type: 2}
 --- !u!4 &767459027
 Transform:
   m_ObjectHideFlags: 0
