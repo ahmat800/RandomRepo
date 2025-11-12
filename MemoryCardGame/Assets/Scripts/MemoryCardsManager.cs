@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class MemoryCardsManager : MonoBehaviour
 {
 
+    public static MemoryCardsManager instance;
 
     public int totalCardsCouple = 8;
     private Dictionary<int, MemoryCard> memoryCardsDictionary;
+    private List<MemoryCard> memoryCards;
     public float cardsViewDuration = 4;
     public MemoryCard memoryCardPrefab;
     public GridLayoutGroup gridLayout;
@@ -22,11 +24,14 @@ public class MemoryCardsManager : MonoBehaviour
     private MemoryCard card2;
 
 
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
         wrongMoveAmount = maxWrnogMovementAmount;
-        InitCards();
     }
 
     private void Update()
@@ -48,29 +53,45 @@ public class MemoryCardsManager : MonoBehaviour
 
     }
 
-    public void InitCards()
+   
+
+    public void PrepareGame() 
+    {
+        InitCards();
+
+        // Check For Saved Progress
+
+
+        GameUiManager.instance.UpdateMovesText(maxWrnogMovementAmount);
+        GameUiManager.instance.UpdateScoreText(0);
+    }
+
+    private void InitCards()
     {
         InitCardsSize();
 
-        List<MemoryCard> memoryCards = new List<MemoryCard>();
-        memoryCardsDictionary = new Dictionary<int, MemoryCard> ();
-        for (int i = 0; i < totalCardsCouple * 2; i += 2)
+
+        if (memoryCards == null)
+            CreateCards();
+
+
+        foreach (MemoryCard card in memoryCards)
         {
-            MemoryCard newCard1 = Instantiate(memoryCardPrefab);
-            MemoryCard newCard2 = Instantiate(memoryCardPrefab);
-
-            int radomCardSpriteIndex = UnityEngine.Random.Range(0, cardSprites.Count);
-            newCard1.InitCard(i,cardSprites[radomCardSpriteIndex], this);
-            newCard2.InitCard(i + 1, cardSprites[radomCardSpriteIndex], this);
+            card.isMatched = false;
+            card.ForceHide();
+        }
 
 
 
-            memoryCards.Add(newCard1);
-            memoryCards.Add(newCard2);
-
+        foreach (MemoryCard card in memoryCards)
+        {
+            card.isMatched = false;
         }
 
         ShuffleCards(memoryCards);
+
+
+        memoryCardsDictionary = new Dictionary<int, MemoryCard>();
 
         foreach (MemoryCard card in memoryCards) 
         {
@@ -83,9 +104,27 @@ public class MemoryCardsManager : MonoBehaviour
             memoryCardsDictionary[i].transform.localScale = Vector3.one;
         }
     }
+    private void CreateCards()
+    {
+        memoryCards = new List<MemoryCard>();
+        for (int i = 0; i < totalCardsCouple * 2; i += 2)
+        {
+            MemoryCard newCard1 = Instantiate(memoryCardPrefab);
+            MemoryCard newCard2 = Instantiate(memoryCardPrefab);
+
+            int radomCardSpriteIndex = UnityEngine.Random.Range(0, cardSprites.Count);
+            newCard1.InitCard(i, cardSprites[radomCardSpriteIndex], this);
+            newCard2.InitCard(i + 1, cardSprites[radomCardSpriteIndex], this);
 
 
-    public void ShuffleCards(List<MemoryCard> cards)
+
+            memoryCards.Add(newCard1);
+            memoryCards.Add(newCard2);
+
+        }
+    }
+
+    private void ShuffleCards(List<MemoryCard> cards)
     {
         for (int i = 0; i < cards.Count; i++)
         {
@@ -94,7 +133,7 @@ public class MemoryCardsManager : MonoBehaviour
         }
     }
 
-    public void InitCardsSize()
+    private void InitCardsSize()
     {
         RectTransform rect = gridLayout.GetComponent<RectTransform>();
         float rectX = rect.rect.width;
@@ -151,16 +190,23 @@ public class MemoryCardsManager : MonoBehaviour
 
     }
     private int Score = 0;
-    public void CheckForCardMachig(int card1Id, int card2Id) 
+    private void CheckForCardMachig(int card1Id, int card2Id) 
     {
 
         pendingMoves -= 1;
 
         if (memoryCardsDictionary[card1Id].GetCardSprite() == memoryCardsDictionary[card2Id].GetCardSprite())
         {
+            memoryCardsDictionary[card1Id].isMatched = true;
+            memoryCardsDictionary[card2Id].isMatched = true;
             wrongMoveAmount += 1;
             Score += 5;
             GameUiManager.instance.UpdateScoreText(Score);
+
+            if (areAllCardsMatched())
+            {
+                GameUiManager.instance.ShowEndGamePanel(false);
+            }
         }
         else 
         {
@@ -172,18 +218,29 @@ public class MemoryCardsManager : MonoBehaviour
 
         if (wrongMoveAmount == 0 && pendingMoves == 0)
         {
-            //End Game
+            GameUiManager.instance.ShowEndGamePanel(false);
         }
     }
 
-    public void ClearHoldedCards()
+    private void ClearHoldedCards()
     {
         card1 = null;
         card2 = null;
     }
 
+    private bool areAllCardsMatched() 
+    {
+        foreach (var card in memoryCardsDictionary.Values) 
+        {
+            if (!card.isMatched)
+                return false;
+        }
 
+        return true;
+    }
 
-
-
+    public void SaveProgress()
+    {
+        
+    }
 }

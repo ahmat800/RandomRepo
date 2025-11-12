@@ -11,10 +11,13 @@ public class MemoryCard : MonoBehaviour
     [SerializeField] private Sprite flippedCardSprite;
     [SerializeField] private Sprite cardbackgroundSprite;
     [SerializeField] private Button button;
+    
 
 
     [SerializeField] private float cardFlipDuration;
     private int Id;
+    public bool isMatched = false;
+
 
     public void InitCard(int cardId, Sprite cardSprite, MemoryCardsManager cardsManager)
     {
@@ -41,6 +44,14 @@ public class MemoryCard : MonoBehaviour
         cardFlipCoroutine = StartCoroutine(ScaleOnX(true, onComplete, delay));
 
     }
+
+    public void ForceHide() 
+    {
+        cardImage.enabled = false;
+        cardBackgroundImage.sprite = flippedCardSprite;
+        button.interactable = true;
+    }
+
     public void HideCard(UnityAction onComplete, float delay = 0) 
     {
         if (cardFlipCoroutine != null)
@@ -64,7 +75,6 @@ public class MemoryCard : MonoBehaviour
         {
             timer += Time.deltaTime;
             float scale = Mathf.Lerp(1, 0, (timer / cardFlipDuration));
-            Debug.LogError($"Scale {scale}");
             cardBackgroundImage.rectTransform.localScale = new Vector3(scale, 1, 1);
             yield return null;
         }
