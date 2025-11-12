@@ -29,6 +29,9 @@ public class GameUiManager : MonoBehaviour
     public Button playButton;
     public Button exitButton;
 
+
+    [SerializeField] private GameObject blockingPanel;
+
     private void Awake()
     {
         instance = this;
@@ -43,7 +46,10 @@ public class GameUiManager : MonoBehaviour
             {
                 ShowGamePanel();
                 MemoryCardsManager.instance.PrepareGame();
-            }, null);
+            }, () =>
+            {
+                MemoryCardsManager.instance.ShowCards();
+            });
         });
 
         homeButton.onClick.AddListener(() =>
@@ -100,5 +106,14 @@ public class GameUiManager : MonoBehaviour
 
         stateText.text = isWinner ? "Win" : "Lose";
         describtionText.text = isWinner ? "Good Job You Won This Game" : "Try Harder To Win This Game";
+    }
+
+    public void ShowBlockingPanel() 
+    {
+        blockingPanel.SetActive(true);
+    }
+    public void HideBlockingPanel() 
+    {
+        blockingPanel.SetActive(false);
     }
 }

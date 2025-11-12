@@ -64,6 +64,8 @@ public class MemoryCardsManager : MonoBehaviour
             }
 
             ShuffleCards(memoryCards);
+
+            
         }
 
 
@@ -79,6 +81,7 @@ public class MemoryCardsManager : MonoBehaviour
             card.transform.SetParent(gridLayout.transform);
             card.transform.localScale = Vector3.one;
         }
+
     }
     private void CreateCards()
     {
@@ -183,9 +186,9 @@ public class MemoryCardsManager : MonoBehaviour
 
             if (AreAllCardsMatched())
             {
-                GameUiManager.instance.ShowEndGamePanel(true);
                 AudioManager.instance.PlaySound("Win");
                 ProgressManager.ClearLevelData();
+                StartCoroutine(EndGame(true));
             }
         }
         else 
@@ -199,11 +202,22 @@ public class MemoryCardsManager : MonoBehaviour
 
         if (wrongMoveAmount == 0 && pendingMoves == 0)
         {
-            GameUiManager.instance.ShowEndGamePanel(false);
+            StartCoroutine(EndGame(false));
             ProgressManager.ClearLevelData();
         }
     }
 
+
+    IEnumerator EndGame(bool isWinner) 
+    {
+        GameUiManager.instance.ShowBlockingPanel();
+
+        yield return new WaitForSeconds(1);
+
+        GameUiManager.instance.ShowEndGamePanel(isWinner);
+
+        GameUiManager.instance.HideBlockingPanel();
+    }
     private void ClearHoldedCards()
     {
         card1 = null;
@@ -276,5 +290,30 @@ public class MemoryCardsManager : MonoBehaviour
         }
 
         ProgressManager.SaveLevel(levelData);
+    }
+
+    public void ShowCards()
+    {
+        StartCoroutine(ShowCardsRoutine());
+    }
+
+    IEnumerator ShowCardsRoutine() 
+    {
+        GameUiManager.instance.ShowBlockingPanel();
+
+        yield return new WaitForSeconds(1);
+
+        for (int i = 0; i < memoryCards.Count; i++)
+        {
+            memoryCards[i].ShowCard(null);
+        }
+
+        yield return new WaitForSeconds(5);
+
+        for (int i = 0; i < memoryCards.Count; i++)
+        {
+            memoryCards[i].HideCard(null);
+        }
+        GameUiManager.instance.HideBlockingPanel();
     }
 }

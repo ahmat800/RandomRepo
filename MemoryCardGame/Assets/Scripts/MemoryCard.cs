@@ -39,6 +39,9 @@ public class MemoryCard : MonoBehaviour
 
     public void ShowCard(UnityAction onComplete, float delay = 0)
     {
+        if (isMatched)
+            return;
+
         if (cardFlipCoroutine != null) 
             StopCoroutine(cardFlipCoroutine);
 
@@ -64,6 +67,9 @@ public class MemoryCard : MonoBehaviour
 
     public void HideCard(UnityAction onComplete, float delay = 0) 
     {
+        if (isMatched)
+            return;
+
         if (cardFlipCoroutine != null)
             StopCoroutine(cardFlipCoroutine);
 
