@@ -29,31 +29,9 @@ public class MemoryCardsManager : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
-    {
-        wrongMoveAmount = maxWrnogMovementAmount;
-    }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            for (int i = 0; i < memoryCardsDictionary.Count; i++)
-            {
-                memoryCardsDictionary[i].ShowCard(null);
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.Space)) 
-        {
-            for (int i = 0; i < memoryCardsDictionary.Count; i++)
-            {
-                memoryCardsDictionary[i].HideCard(null);
-            }
-        }
 
-    }
 
-   
 
     public void PrepareGame() 
     {
@@ -69,7 +47,9 @@ public class MemoryCardsManager : MonoBehaviour
     private void InitCards()
     {
         InitCardsSize();
-
+        wrongMoveAmount = maxWrnogMovementAmount;
+        pendingMoves = 0;
+        Score = 0;
 
         if (memoryCards == null)
             CreateCards();
@@ -203,9 +183,12 @@ public class MemoryCardsManager : MonoBehaviour
             Score += 5;
             GameUiManager.instance.UpdateScoreText(Score);
 
+            AudioManager.instance.PlaySound("CardMatching");
+
             if (areAllCardsMatched())
             {
-                GameUiManager.instance.ShowEndGamePanel(false);
+                GameUiManager.instance.ShowEndGamePanel(true);
+                AudioManager.instance.PlaySound("Win");
             }
         }
         else 
@@ -214,6 +197,7 @@ public class MemoryCardsManager : MonoBehaviour
             memoryCardsDictionary[card2Id].HideCard(null, 0.3f);
 
             GameUiManager.instance.UpdateMovesText(wrongMoveAmount);
+            AudioManager.instance.PlaySound("CardMatchingFail");
         }
 
         if (wrongMoveAmount == 0 && pendingMoves == 0)

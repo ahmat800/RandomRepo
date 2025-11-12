@@ -38,6 +38,7 @@ public class GameUiManager : MonoBehaviour
     {
         playButton.onClick.AddListener(() =>
         {
+            AudioManager.instance.PlaySound("ButtonClick");
             loadingPanel.ShowLoadingPanel(() =>
             {
                 ShowGamePanel();
@@ -47,6 +48,7 @@ public class GameUiManager : MonoBehaviour
 
         homeButton.onClick.AddListener(() =>
         {
+            AudioManager.instance.PlaySound("ButtonClick");
             loadingPanel.ShowLoadingPanel(() =>
             {
                 ShowManuPanel();
@@ -57,6 +59,7 @@ public class GameUiManager : MonoBehaviour
 
         GameEndHomeButton.onClick.AddListener(() =>
         {
+            AudioManager.instance.PlaySound("ButtonClick");
             loadingPanel.ShowLoadingPanel(() =>
             {
                 ShowManuPanel();

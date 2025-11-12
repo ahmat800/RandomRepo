@@ -70,6 +70,7 @@ public class MemoryCard : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
+        AudioManager.instance.PlaySound("CardFlip");
 
         while (timer / cardFlipDuration < 1) 
         {
