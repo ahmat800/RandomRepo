@@ -14,9 +14,11 @@ public class MemoryCard : MonoBehaviour
 
 
     [SerializeField] private float cardFlipDuration;
+    private int Id;
 
-    public void InitCard(Sprite cardSprite, MemoryCardsManager cardsManager)
+    public void InitCard(int cardId, Sprite cardSprite, MemoryCardsManager cardsManager)
     {
+        Id = cardId;
         cardImage.sprite = cardSprite;
         button.onClick.AddListener(() =>
         {
@@ -24,31 +26,39 @@ public class MemoryCard : MonoBehaviour
         });
     }
 
+    public int GetId() 
+    {
+        return Id;
+    }
+
     Coroutine cardFlipCoroutine;
 
-    public void ShowCard(UnityAction onComplete)
+    public void ShowCard(UnityAction onComplete, float delay = 0)
     {
         if (cardFlipCoroutine != null) 
             StopCoroutine(cardFlipCoroutine);
 
-        cardFlipCoroutine = StartCoroutine(ScaleOnX(true, onComplete));
+        cardFlipCoroutine = StartCoroutine(ScaleOnX(true, onComplete, delay));
 
     }
-    public void HideCard(UnityAction onComplete) 
+    public void HideCard(UnityAction onComplete, float delay = 0) 
     {
         if (cardFlipCoroutine != null)
             StopCoroutine(cardFlipCoroutine);
 
-        cardFlipCoroutine = StartCoroutine(ScaleOnX(false, onComplete));
+        cardFlipCoroutine = StartCoroutine(ScaleOnX(false, onComplete, delay));
     }
 
-    private IEnumerator ScaleOnX(bool cardVisibilaty, UnityAction onComplete)
+    private IEnumerator ScaleOnX(bool cardVisibilaty, UnityAction onComplete, float delay = 0)
     {
         float timer = 0;
         if (cardVisibilaty) 
         {
             button.interactable = false;
         } 
+
+        yield return new WaitForSeconds(delay);
+
 
         while (timer / cardFlipDuration < 1) 
         {
@@ -79,11 +89,7 @@ public class MemoryCard : MonoBehaviour
             yield return null;
         }
 
-        if (!cardVisibilaty)
-        {
-            button.interactable = true;
-        }
-
+        button.interactable = !cardVisibilaty;
         onComplete?.Invoke();
     }
 

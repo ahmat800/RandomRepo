@@ -9,7 +9,7 @@ public class MemoryCardsManager : MonoBehaviour
 
 
     public int totalCardsCouple = 8;
-    private List<MemoryCard> memoryCards;
+    private Dictionary<int, MemoryCard> memoryCardsDictionary;
     public float cardsViewDuration = 4;
     public MemoryCard memoryCardPrefab;
     public GridLayoutGroup gridLayout;
@@ -30,16 +30,16 @@ public class MemoryCardsManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            for (int i = 0; i < memoryCards.Count; i++)
+            for (int i = 0; i < memoryCardsDictionary.Count; i++)
             {
-                memoryCards[i].ShowCard(null);
+                memoryCardsDictionary[i].ShowCard(null);
             }
         }
         else if (Input.GetKeyUp(KeyCode.Space)) 
         {
-            for (int i = 0; i < memoryCards.Count; i++)
+            for (int i = 0; i < memoryCardsDictionary.Count; i++)
             {
-                memoryCards[i].HideCard(null);
+                memoryCardsDictionary[i].HideCard(null);
             }
         }
 
@@ -49,15 +49,16 @@ public class MemoryCardsManager : MonoBehaviour
     {
         InitCardsSize();
 
-        memoryCards = new List<MemoryCard>();
+        List<MemoryCard> memoryCards = new List<MemoryCard>();
+        memoryCardsDictionary = new Dictionary<int, MemoryCard> ();
         for (int i = 0; i < totalCardsCouple * 2; i += 2)
         {
             MemoryCard newCard1 = Instantiate(memoryCardPrefab);
             MemoryCard newCard2 = Instantiate(memoryCardPrefab);
 
             int radomCardSpriteIndex = UnityEngine.Random.Range(0, cardSprites.Count);
-            newCard1.InitCard(cardSprites[radomCardSpriteIndex], this);
-            newCard2.InitCard(cardSprites[radomCardSpriteIndex], this);
+            newCard1.InitCard(i,cardSprites[radomCardSpriteIndex], this);
+            newCard2.InitCard(i + 1, cardSprites[radomCardSpriteIndex], this);
 
 
 
@@ -68,10 +69,15 @@ public class MemoryCardsManager : MonoBehaviour
 
         ShuffleCards(memoryCards);
 
-        for (int i = 0; i < memoryCards.Count; i++)
+        foreach (MemoryCard card in memoryCards) 
         {
-            memoryCards[i].transform.SetParent(gridLayout.transform);
-            memoryCards[i].transform.localScale = Vector3.one;
+            memoryCardsDictionary.Add(card.GetId(), card);
+        }
+
+        for (int i = 0; i < memoryCardsDictionary.Count; i++)
+        {
+            memoryCardsDictionary[i].transform.SetParent(gridLayout.transform);
+            memoryCardsDictionary[i].transform.localScale = Vector3.one;
         }
     }
 
@@ -121,25 +127,40 @@ public class MemoryCardsManager : MonoBehaviour
         {
             card2 = card;
             maxTryCount -= 1;
+
+            int card1TempID = card1.GetId();
+            int card2TempID = card2.GetId();
+
             card2.ShowCard(() => 
             {
-                CheckForCardMachig(card1, card2);
+                CheckForCardMachig(card1TempID, card2TempID);
             });
+
+            ClearHoldedCards();
+
         }
 
     }
 
-    public void CheckForCardMachig(MemoryCard card1, MemoryCard card2) 
+    public void CheckForCardMachig(int card1Id, int card2Id) 
     {
-        if (card1.GetCardSprite() == card2.GetCardSprite())
+        
+
+        if (memoryCardsDictionary[card1Id].GetCardSprite() == memoryCardsDictionary[card2Id].GetCardSprite())
         {
-            // Game Is Done
+            Debug.LogError("Matching Cards");
         }
         else 
         {
-            card1.HideCard(null);
-            card2.HideCard(null);
+            memoryCardsDictionary[card1Id].HideCard(null, 0.3f);
+            memoryCardsDictionary[card2Id].HideCard(null, 0.3f);
         }
+    }
+
+    public void ClearHoldedCards()
+    {
+        card1 = null;
+        card2 = null;
     }
 
 
