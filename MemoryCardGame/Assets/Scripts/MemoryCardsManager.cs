@@ -68,7 +68,7 @@ public class MemoryCardsManager : MonoBehaviour
 
             
         }
-
+        ClearHoldedCards();
 
 
         memoryCardsDictionary = new Dictionary<int, MemoryCard>();
